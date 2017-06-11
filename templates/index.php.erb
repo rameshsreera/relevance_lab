@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome to Relevance Labs</title>
+</head>
+<body>
+<?php
+
+$host = "<%= node['relevance_lab']['host'] %>";
+$user = "<%= node['relevance_lab']['user'] %>";
+$group = "<%= node['relevance_lab']['group'] %>";
+$public_html = "<%= node['relevance_lab']['document_root'] %>";
+
+print "host: $host\n";
+print "user: $user\n";
+print "group: $group\n";
+print "public_html: $public_html\n";
+
+?>
+</body>
+</html>

@@ -17,3 +17,11 @@ version '0.1.0'
 # a Supermarket.
 #
 # source_url 'https://github.com/<insert_org_here>/relevance_lab' if respond_to?(:source_url)
+
+#The SELinux (Security Enhanced Linux) cookbook provides recipes for manipulating SELinux policy enforcement state
+#Permissive -- Allows access but reports violations
+depends 'selinux', '~> 0.9'
+#Provides a set of primitives for managing firewalls and associated rules. 
+depends 'firewall', '~> 2.5'
+#Provides httpd_service, httpd_config, and httpd_module resources
+depends 'httpd', '~> 0.4'
